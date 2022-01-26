@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><title>appointment@HausDentalClinic</title></head>
+<head><title>appointment@Haus-TPR-DentalClinic</title></head>
  
 <body>
  
@@ -11,13 +11,12 @@
   async function getUserProfile() {
    const profile = await liff.getProfile()
    window.location.replace(
-     `https://docs.google.com/forms/d/e/1FAIpQLSfRK4i9m_Dv8Dt3mdn7NJKgLKPwOsZ8rxBsPb2HkGBVOsdVag/viewform?usp=pp_url
-       &entry.2089218021=${profile.displayName}`
+     `https://docs.google.com/forms/d/e/1FAIpQLSe0ZapG39JrSz8xiwA4agk-d06-R85SqxLKCe5eBOKELedXqw/viewform?usp=sf_link`
      );
    }
  
   async function main() {
-     await liff.init({ liffId: "1655748337-knEQ7l1Q" })
+     await liff.init({ liffId: "1656838640-Q5RVV63z" })
        if (liff.isLoggedIn()) {
          getUserProfile()
        } else {
